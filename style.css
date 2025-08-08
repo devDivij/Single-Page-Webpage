@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin:0
+  
+}
+
+body {
+  margin: 0px;
+  font-family: 'Poppins', "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header{
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  background-color: cornflowerblue;
+  overflow: hidden;
+  position: sticky;
+  top: 0%;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+
+footer a:hover{
+  color: darkblue;
+}
+
+nav a:hover{
+  color: darkblue;
+}
+
+main {
+  background-color: azure;
+  text-align: center;
+}
+
+h2 {
+  padding: 20px;
+}
+
+section:nth-child(even) {
+  background-color: lightblue;
+  height: 80vh;
+}
+
+section {
+  overflow: auto;
+  height: 80vh;
+  border-radius: 7px;
+  height: 100%;
+}
+.main-carousel iframe{
+  max-height: 60vh;
+  max-width: 100vw !important;
+}
+iframe {
+  padding: 10px;
+  size: 50%;
+  min-width:70%;
+  height: 80vh;
+  max-width: 100%;
+}
+
+img {
+  height: 200px;
+  width: auto;
+  padding: 50px;
+}
+img.Facebook{
+  clip-path: circle(30% at 50% 50%);
+}
+
+section h5 {
+  margin: 40px;
+}
+
+footer {
+  display: flex;
+  background-color: cornflowerblue;
+  overflow: hidden;
+}
+footer a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+
+aside{
+  background-color: azure;
+}
+aside>div{
+  width: 250px;
+  height: 100%;
+  margin-left: 1%;
+  text-align: center;
+  position: relative;
+  right: 0;
+  padding-bottom: 10px;
+  border-radius: 7px;
+}
+a[href='mailto:divijarora2007@gmail.com']{
+  text-decoration: none;
+  color: dodgerblue;
+}
+.banner{
+  background-image: url(gif.gif);
+  height: 50vh;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 25%;
+  background-attachment: fixed;
+}
+.login, .copyright{
+  margin-left: auto;
+}
+@media  all and (min-width:1001px) {
+  aside div>a:after{color: dodgerblue;
+    content: "("attr(data-email)")";
+    font-size: 10px;
+    font-style: italic;
+  }}
+@media  all and (max-width:1000px) and (min-width:700px
+){
+  aside div>a:before{color: dodgerblue;
+    content: "Email: ";
+    font-style: italic;
+  }}
+@media screen and (max-width:620px) {
+  nav,footer{
+    flex-direction: column;
+    position: unset;
+  }
+  .login, .copyright{
+    margin-left: 0 !important;
+  }
+}
